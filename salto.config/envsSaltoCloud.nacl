@@ -12,5 +12,9 @@ envs {
       uuid = "07a3cce9-d1c8-4254-ab8c-892e4f9caeef"
       folderName = "m"
     },
+    {
+      uuid = "7dfdc08b-5d22-4806-ac8e-89270a57a7a4"
+      folderName = "newenv"
+    },
   ]
 }
