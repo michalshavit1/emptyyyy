@@ -31,18 +31,6 @@ salesforce.Layout Account_Account__28Marketing_29_Layout@bspps {
               behavior = "Edit"
               field = salesforce.Account.field.Site
             },
-            {
-              behavior = "Edit"
-              field = salesforce.Account.field.custom_text__c
-            },
-            {
-              behavior = "Edit"
-              field = salesforce.Account.field.Colors__c
-            },
-            {
-              behavior = "Edit"
-              field = salesforce.Account.field.testcb__c
-            },
           ]
         },
         {

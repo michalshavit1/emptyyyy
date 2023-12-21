@@ -21,48 +21,11 @@ type salesforce.Account {
     updateable = true
     queryable = true
   }
-  salesforce.Picklist Colors__c {
-    apiName = "Account.Colors__c"
-    description = "List of colors"
-    externalId = false
-    label = "Colors"
-    valueSet = [
-      {
-        fullName = "Yellow"
-        default = false
-        label = "Yellow"
-      },
-      {
-        fullName = "Purple"
-        default = false
-        label = "Purple"
-      },
-      {
-        fullName = "Blue"
-        default = false
-        label = "Blue"
-      },
-      {
-        fullName = "Red"
-        default = false
-        label = "Red"
-      },
-      {
-        fullName = "Green"
-        default = false
-        label = "Green"
-      },
-    ]
-    sorted = false
-    restricted = true
-    createable = true
-    updateable = true
-    queryable = true
-  }
+  
   salesforce.Picklist CustomerPriority__c {
     apiName = "Account.CustomerPriority__c"
     externalId = false
-    label = "Customer Priority"
+    label = "1653016183622"
     valueSet = [
       {
         fullName = "High"
@@ -175,25 +138,27 @@ type salesforce.Account {
     updateable = true
     queryable = true
   }
-  salesforce.Text custom_text__c {
-    apiName = "Account.custom_text__c"
-    description = "Yet another text field UPDATED"
+  
+  
+  salesforce.Summary rollupsummary__c {
+    apiName = "Account.rollupsummary__c"
     externalId = false
-    label = "custom_text"
-    length = 100
-    unique = false
-    createable = true
-    updateable = true
-    caseSensitive = false
+    label = "Summary label Updated"
+    summarizedField = "Opportunity.TotalOpportunityQuantity"
+    summaryFilterItems = [
+      {
+        field = "Opportunity.TotalOpportunityQuantity"
+        operation = "lessThan"
+        value = "10"
+      },
+    ]
+    summaryForeignKey = "Opportunity.AccountId"
+    summaryOperation = "min"
+    precision = 18
+    scale = 2
+    createable = false
+    updateable = false
     queryable = true
-  }
-  salesforce.Checkbox testcb__c {
-    apiName = "Account.testcb__c"
-    defaultValue = false
-    externalId = false
-    label = "testcb"
-    createable = true
-    updateable = true
-    queryable = true
+    _hidden_value = true
   }
 }
