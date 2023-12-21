@@ -1,0 +1,16 @@
+envs {
+  envs = [
+    {
+      name = "gbdrf"
+      accountToServiceName = {
+        salesforce = "salesforce"
+      }
+    },
+    {
+      name = "rerg"
+      accountToServiceName = {
+        salesforce = "salesforce"
+      }
+    },
+  ]
+}

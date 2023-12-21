@@ -1,0 +1,21 @@
+type salesforce.FlowComplexLiteralTranslation {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string customAspectKey {
+  }
+  string value {
+  }
+  metadataType = "FlowComplexLiteralTranslation"
+}

@@ -1,0 +1,16 @@
+salesforce.CustomLabel label1 {
+  fullName = "label1"
+  language = "en_US"
+  protected = true
+  shortDescription = "label1desc"
+  value = "vluenta"
+  _alias = "label1"
+}
+salesforce.CustomLabel label2 {
+  fullName = "label2"
+  language = "en_US"
+  protected = true
+  shortDescription = "label2desc"
+  value = "value2"
+  _alias = "label2"
+}

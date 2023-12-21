@@ -1,0 +1,43 @@
+type salesforce.PromptVersionTranslation {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string actionButtonLabel {
+  }
+  string actionButtonLink {
+  }
+  string body {
+  }
+  string description {
+  }
+  string dismissButtonLabel {
+  }
+  string header {
+  }
+  string imageAltText {
+  }
+  string imageLink {
+  }
+  string label {
+  }
+  string name {
+  }
+  number stepNumber {
+  }
+  string title {
+  }
+  string videoLink {
+  }
+  metadataType = "PromptVersionTranslation"
+}

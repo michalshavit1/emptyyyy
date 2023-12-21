@@ -1,0 +1,19 @@
+type salesforce.PetType__mdt {
+  annotations {
+    serviceid apiName {
+    }
+    serviceid metadataType {
+    }
+    string label {
+    }
+    string pluralLabel {
+    }
+    hidden_string keyPrefix {
+    }
+  }
+  apiName = "PetType__mdt"
+  metadataType = "CustomMetadata"
+  label = "PetType"
+  pluralLabel = "PetTypes"
+  _alias = "PetType"
+}

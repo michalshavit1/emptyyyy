@@ -1,0 +1,48 @@
+salesforce.QuickAction Account_quick_create_account@vuu {
+  fullName = "Account.quick_create_account"
+  optionsCreateFeedItem = true
+  quickActionLayout = {
+    layoutSectionStyle = "TwoColumnsLeftToRight"
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = salesforce.Account.field.Name
+            uiBehavior = "Required"
+          },
+          {
+            emptySpace = false
+            field = salesforce.Account.field.Phone
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = salesforce.Account.field.Industry
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = salesforce.Account.field.Type
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = salesforce.Account.field.Website
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+      {
+      },
+    ]
+  }
+  standardLabel = "CreateNew"
+  targetObject = salesforce.Account
+  targetParentField = "Parent"
+  type = "Create"
+  _parent = [
+    salesforce.Account,
+  ]
+  _alias = "Account.quick_create_account"
+}

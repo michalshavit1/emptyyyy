@@ -1,0 +1,7 @@
+salesforce.PetType__mdt PetType_Monkey@v {
+  label = "Monkey"
+  protected = false
+  fullName = "PetType.Monkey"
+  NumberOfLegs__c = 2
+  _alias = "Monkey"
+}

@@ -1,0 +1,25 @@
+type salesforce.IdentityVerificationFieldTranslation {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string customFieldLabel {
+  }
+  string description {
+  }
+  string label {
+  }
+  string name {
+  }
+  metadataType = "IdentityVerificationFieldTranslation"
+}
