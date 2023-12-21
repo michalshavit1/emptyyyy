@@ -1,0 +1,105 @@
+salesforce.Translations es {
+  fullName = "es"
+  customLabels = [
+    {
+      label = "lable1"
+      name = "label1"
+    },
+    {
+      label = ""
+      name = "label2"
+    },
+  ]
+  flowDefinitions = [
+    {
+      flows = {
+      }
+      fullName = "Sample_Process"
+    },
+    {
+      flows = {
+      }
+      fullName = "TestEmailAlert"
+    },
+    {
+      flows = {
+      }
+      fullName = "sample_flow"
+    },
+  ]
+  quickActions = [
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.LogACall
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.NewAccount
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.NewCase
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.NewContact
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.NewEvent
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.NewGroup
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.NewLead
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.NewNote
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.NewOpportunity
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.NewTask
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.SendEmail
+    },
+  ]
+  reportTypes = [
+    {
+      description = ""
+      label = ""
+      name = "TestAccounts"
+      sections = [
+        {
+          label = ""
+          name = "Accounts"
+        },
+      ]
+    },
+    {
+      description = ""
+      label = ""
+      name = "screen_flows_prebuilt_crt"
+      sections = [
+        {
+          label = ""
+          name = "Flow Interview Log Entries"
+        },
+        {
+          label = ""
+          name = "Flow Interview Logs"
+        },
+      ]
+    },
+  ]
+  _alias = "es"
+}

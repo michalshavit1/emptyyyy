@@ -1,0 +1,315 @@
+type salesforce.Lead {
+  salesforce.Picklist AppCategory__c {
+    apiName = "Lead.AppCategory__c"
+    description = "The app category"
+    externalId = false
+    label = "App Category"
+    valueSet = [
+      {
+        fullName = "Gaming"
+        default = false
+        label = "Gaming"
+      },
+      {
+        fullName = "Social"
+        default = false
+        label = "Social"
+      },
+      {
+        fullName = "Dating"
+        default = false
+        label = "Dating"
+      },
+      {
+        fullName = "Sports"
+        default = false
+        label = "Sports"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text CurrentGenerators__c {
+    apiName = "Lead.CurrentGenerators__c"
+    externalId = false
+    label = "Current Generator(s)"
+    length = 100
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist KylesPicklist__c {
+    apiName = "Lead.KylesPicklist__c"
+    description = "some desc"
+    externalId = false
+    label = "Kyles Picklist"
+    valueSet = [
+      {
+        fullName = "Val1"
+        default = false
+        label = "Val1"
+      },
+      {
+        fullName = "Val2"
+        default = false
+        label = "Val2"
+      },
+      {
+        fullName = "Val3"
+        default = false
+        label = "Val13"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist MobileOSType__c {
+    apiName = "Lead.MobileOSType__c"
+    description = "the mobile os type of the customer"
+    externalId = false
+    label = "Mobile OS Type"
+    valueSet = [
+      {
+        fullName = "Android"
+        default = false
+        label = "Android"
+      },
+      {
+        fullName = "iOS"
+        default = false
+        label = "iOS"
+      },
+      {
+        fullName = "WindowsPhone"
+        default = false
+        label = "WindowsPhone"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaText MyCompanySize__c {
+    apiName = "Lead.MyCompanySize__c"
+    externalId = false
+    formula = '''
+IF(MyNumberOfEmployees__c < 10,'Small',
+IF (AND( MyNumberOfEmployees__c >= 10, MyNumberOfEmployees__c < 100),'Medium',
+'Large'))
+'''
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "MyCompanySize"
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Lead.field.MyNumberOfEmployees__c
+      },
+    ]
+  }
+  salesforce.Number MyNumberOfEmployees__c {
+    apiName = "Lead.MyNumberOfEmployees__c"
+    externalId = false
+    label = "MyNumberOfEmployees"
+    precision = 18
+    scale = 0
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number NumberofLocations__c {
+    apiName = "Lead.NumberofLocations__c"
+    externalId = false
+    label = "Number of Locations"
+    precision = 3
+    scale = 0
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Primary__c {
+    apiName = "Lead.Primary__c"
+    externalId = false
+    label = "Primary"
+    valueSet = [
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+      },
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist ProductInterest__c {
+    apiName = "Lead.ProductInterest__c"
+    externalId = false
+    label = "Product Interest"
+    valueSet = [
+      {
+        fullName = "GC1000 series"
+        default = false
+        label = "GC1000 series"
+      },
+      {
+        fullName = "GC5000 series"
+        default = false
+        label = "GC5000 series"
+      },
+      {
+        fullName = "GC3000 series"
+        default = false
+        label = "GC3000 series"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SICCode__c {
+    apiName = "Lead.SICCode__c"
+    description = "some desc updated..."
+    externalId = false
+    label = "SIC Code"
+    length = 15
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Number TestNumberField__c {
+    apiName = "Lead.TestNumberField__c"
+    externalId = false
+    label = "Test Number Field"
+    precision = 3
+    scale = 0
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox astar_bool__c {
+    apiName = "Lead.astar_bool__c"
+    defaultValue = false
+    description = "some desc..."
+    externalId = false
+    label = "astar bool"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox demo_bool__c {
+    apiName = "Lead.demo_bool__c"
+    defaultValue = false
+    description = "demo boolean field"
+    externalId = false
+    label = "demo bool"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist favourite_colour__c {
+    apiName = "Lead.favourite_colour__c"
+    description = "favorite color of the customer"
+    externalId = false
+    label = "favourite_colour"
+    valueSet = [
+      {
+        fullName = "red"
+        default = false
+        label = "red"
+      },
+      {
+        fullName = "yellow"
+        default = false
+        label = "yellow"
+      },
+      {
+        fullName = "blue"
+        default = false
+        label = "blue"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number pref_temp__c {
+    apiName = "Lead.pref_temp__c"
+    description = "customer's preferred temp.."
+    externalId = false
+    label = "pref_temp"
+    precision = 18
+    scale = 0
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox test_bool2__c {
+    apiName = "Lead.test_bool2__c"
+    defaultValue = false
+    description = "a test boolean field"
+    externalId = false
+    label = "test_bool2"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist test_picklist__c {
+    apiName = "Lead.test_picklist__c"
+    externalId = false
+    label = "test picklist"
+    valueSet = [
+      {
+        fullName = "test1"
+        default = false
+        label = "test1"
+      },
+      {
+        fullName = "test2"
+        default = false
+        label = "test2"
+      },
+      {
+        fullName = "test3"
+        default = false
+        label = "test3"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

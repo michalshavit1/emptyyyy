@@ -1,0 +1,42 @@
+type salesforce.BotStepTranslation {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  salesforce.BotMessageTranslation botMessages {
+  }
+  salesforce.BotStepTranslation botSteps {
+  }
+  salesforce.BotVariableOperationTranslation botVariableOperation {
+  }
+  string stepIdentifier {
+  }
+  string type {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "GoalStep",
+        "Group",
+        "Invocation",
+        "Message",
+        "Navigation",
+        "RecordLookup",
+        "RichMessage",
+        "SystemMessage",
+        "VariableOperation",
+        "Wait",
+      ]
+    }
+  }
+  metadataType = "BotStepTranslation"
+}

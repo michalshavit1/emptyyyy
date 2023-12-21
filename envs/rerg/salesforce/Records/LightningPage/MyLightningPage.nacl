@@ -1,0 +1,65 @@
+salesforce.LightningPage MyLightningPage {
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "displayAllItems"
+                value = "true"
+              },
+            ]
+            componentName = "salesforceIdentity:appLauncherDesktop"
+            identifier = "salesforceIdentity_appLauncherDesktop"
+          }
+        },
+      ]
+      name = "top"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "home:topDealsContainer"
+            identifier = "home_topDealsContainer"
+          }
+        },
+      ]
+      name = "left"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "home:topDealsContainer"
+            identifier = "home_topDealsContainer2"
+          }
+        },
+      ]
+      name = "middle"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "runtime_approval_process:pendingApprovalCard"
+            identifier = "runtime_approval_process_pendingApprovalCard"
+          }
+        },
+      ]
+      name = "right"
+      type = "Region"
+    },
+  ]
+  masterLabel = "MyLightningPage"
+  template = {
+    name = "home:desktopTemplateHeaderThreeColumns"
+  }
+  type = "HomePage"
+  fullName = "MyLightningPage"
+  _alias = "MyLightningPage"
+}

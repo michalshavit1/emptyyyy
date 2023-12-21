@@ -1,0 +1,21 @@
+type salesforce.BotVersionTranslation {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  salesforce.BotDialogTranslation botDialogs {
+  }
+  serviceid fullName {
+  }
+  metadataType = "BotVersionTranslation"
+}

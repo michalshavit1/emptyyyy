@@ -1,0 +1,29 @@
+salesforce.RecordType Pet__c_InternalIdeasIdeaRecordType {
+  fullName = "Pet__c.InternalIdeasIdeaRecordType"
+  active = true
+  description = "Record Type used to associate ideas with a specific community"
+  label = "Internal Ideas: Idea Record Type"
+  picklistValues = [
+    {
+      picklist = salesforce.Pet__c.field.Pet_Type__c
+      values = [
+        {
+          fullName = "cat"
+          default = false
+        },
+        {
+          fullName = "dog"
+          default = false
+        },
+        {
+          fullName = "fish"
+          default = false
+        },
+      ]
+    },
+  ]
+  _parent = [
+    salesforce.Pet__c,
+  ]
+  _alias = "Internal Ideas: Idea Record Type"
+}

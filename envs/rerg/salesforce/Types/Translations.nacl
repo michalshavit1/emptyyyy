@@ -1,0 +1,55 @@
+type salesforce.Translations {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  salesforce.BotBlockTranslation botBlocks {
+  }
+  salesforce.BotTemplateTranslation botTemplates {
+  }
+  salesforce.BotTranslation bots {
+  }
+  salesforce.CustomApplicationTranslation customApplications {
+  }
+  "List<salesforce.CustomLabelTranslation>" customLabels {
+  }
+  salesforce.CustomPageWebLinkTranslation customPageWebLinks {
+  }
+  salesforce.CustomTabTranslation customTabs {
+  }
+  salesforce.ExplainabilityMsgTemplateFieldTranslation desFieldTemplateMessages {
+  }
+  "List<salesforce.FlowDefinitionTranslation>" flowDefinitions {
+  }
+  serviceid fullName {
+  }
+  salesforce.IdentityVerificationFieldTranslation identityVerificationCustomFieldLabels {
+  }
+  salesforce.PipelineInspMetricConfigTranslation pipelineInspMetricConfigs {
+  }
+  salesforce.PromptTranslation prompts {
+  }
+  "List<salesforce.GlobalQuickActionTranslation>" quickActions {
+  }
+  "List<salesforce.ReportTypeTranslation>" reportTypes {
+  }
+  salesforce.ScontrolTranslation scontrols {
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "translation"
+  dirName = "translations"
+  metadataType = "Translations"
+}

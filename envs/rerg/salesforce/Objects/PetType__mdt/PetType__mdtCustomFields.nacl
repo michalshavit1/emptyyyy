@@ -1,0 +1,11 @@
+type salesforce.PetType__mdt {
+  salesforce.Number NumberOfLegs__c {
+    apiName = "PetType__mdt.NumberOfLegs__c"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    label = "NumberOfLegs"
+    precision = 18
+    scale = 0
+    unique = false
+  }
+}
