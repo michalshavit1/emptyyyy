@@ -1,8 +1,8 @@
 envs {
   envsCloud = [
     {
-      uuid = "c1245d30-a509-4b08-9e1a-8d94a49fa219"
-      folderName = "gr"
+      uuid = "8ffcd41f-d6fc-48a7-bc21-0354a9343e0b"
+      folderName = "zendesk"
     },
   ]
 }
