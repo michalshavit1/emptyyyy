@@ -1,8 +1,8 @@
 envs {
   envsCloud = [
     {
-      uuid = "842b4509-63a0-4235-be2d-2faeb4d00ef9"
-      folderName = "rerg"
+      uuid = "ab169cbb-aaac-467f-a18e-01abd5c5c3c7"
+      folderName = "rgr"
     },
   ]
 }
