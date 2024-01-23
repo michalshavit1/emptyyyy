@@ -1,8 +1,36 @@
 envs {
   envsCloud = [
     {
-      uuid = "21393ee4-6894-402d-8080-e0a0c5a2a27c"
-      folderName = "f"
+      uuid = "f0668e05-761d-4056-8dca-28deb8a3ec01"
+      folderName = "My First Env"
+    },
+    {
+      uuid = "8ee3878f-831a-41d1-85dc-9ddebd697acb"
+      folderName = "meww"
+    },
+    {
+      uuid = "07a3cce9-d1c8-4254-ab8c-892e4f9caeef"
+      folderName = "m"
+    },
+    {
+      uuid = "7dfdc08b-5d22-4806-ac8e-89270a57a7a4"
+      folderName = "newenv"
+    },
+    {
+      uuid = "80a0fbc1-4330-4527-9c7e-ed58f9889f3d"
+      folderName = "x "
+    },
+    {
+      uuid = "ac8b66cf-7aa5-43c0-bcac-e82107bb38e2"
+      folderName = "ghj"
+    },
+    {
+      uuid = "0ebdeca5-90b3-41b3-a8b6-4b4aa0556d14"
+      folderName = "gkj"
+    },
+    {
+      uuid = "2813466c-28e2-4d37-b2d0-12ebdd750934"
+      folderName = "efd"
     },
   ]
 }
